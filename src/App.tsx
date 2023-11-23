@@ -80,6 +80,8 @@ function App() {
             return td
         })
 
+        cloneList.sort((a: Item, b: Item) => Number(a.status) - Number(b.status))
+
         setList(cloneList)
     }
 
